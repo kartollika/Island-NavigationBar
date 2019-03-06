@@ -25,11 +25,6 @@ class IslandNavigationBarTab(
     constructor(context: Context, attrs: AttributeSet?) : this(context, attrs, 0)
     constructor(context: Context) : this(context, null)
 
-    init {
-        initViews()
-        initContent()
-    }
-
     var tabId = 0
         set(value) {
             field = value
@@ -40,15 +35,13 @@ class IslandNavigationBarTab(
     var isTabSelected = false
         private set
 
-    var tabTitle: String? = null
+    var tabTitle: String = ""
         set(value) {
-            value?.let {
-                if (value.isEmpty()) {
-                    tabTitleTextView.visibility = View.GONE
-                }
-                tabTitleTextView.text = value
-            }
             field = value
+            if (value.isEmpty()) {
+                tabTitleTextView.visibility = View.GONE
+            }
+            tabTitleTextView.text = value
         }
 
     var tabIcon: Drawable? = null
@@ -87,6 +80,11 @@ class IslandNavigationBarTab(
     private lateinit var tabTitleTextView: TextView
     private lateinit var tabIconView: ImageView
 
+    init {
+        initViews()
+        initContent()
+    }
+
     internal fun setInitialSelectedStatus(initialSelected: Boolean) {
         if (initialSelected) {
             isTabSelected = true
@@ -97,8 +95,14 @@ class IslandNavigationBarTab(
                 transitionDrawable.startTransition(tabToggleDuration)
             }
             tabTitleTextView.setTextColor(tabTitleActiveColor)
-            tabTitleTextView.visibility = View.VISIBLE
+
+            if (!tabTitle.isEmpty()) {
+                tabTitleTextView.visibility = View.VISIBLE
+            }
         } else {
+            if (background !is TransitionDrawable) {
+                background = null
+            }
             isTabSelected = false
             tabIconView.isSelected = false
             tabTitleTextView.visibility = View.GONE
@@ -114,7 +118,10 @@ class IslandNavigationBarTab(
             background = tabBackground
         }
         tabTitleTextView.setTextColor(tabTitleActiveColor)
-        tabTitleTextView.visibility = View.VISIBLE
+
+        if (!tabTitle.isEmpty()) {
+            tabTitleTextView.visibility = View.VISIBLE
+        }
     }
 
     internal fun deselectTab() {
@@ -148,9 +155,12 @@ class IslandNavigationBarTab(
 
     private fun initContent() {
         val attributes =
-            context.obtainStyledAttributes(attrs, R.styleable.IslandNavigationBarTab)
+            context.obtainStyledAttributes(attrs, R.styleable.IslandNavigationBarTab, 0, 0)
         tabId = id
-        tabTitle = attributes.getString(R.styleable.IslandNavigationBarTab_tabTitle)
+
+        if (attributes.hasValue(R.styleable.IslandNavigationBarTab_tabTitle)) {
+            tabTitle = attributes.getString(R.styleable.IslandNavigationBarTab_tabTitle)!!
+        }
         tabIcon = attributes.getDrawable(R.styleable.IslandNavigationBarTab_tabIcon)
         tabBackground =
             attributes.getDrawable(R.styleable.IslandNavigationBarTab_tabBackground)

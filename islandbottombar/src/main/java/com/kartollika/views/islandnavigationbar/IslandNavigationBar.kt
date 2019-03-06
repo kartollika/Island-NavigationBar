@@ -170,7 +170,7 @@ class IslandNavigationBar(context: Context, private val attrs: AttributeSet?, de
     }*/
 
     private fun initContent() {
-        val attributes = context.obtainStyledAttributes(attrs, R.styleable.IslandNavigationBar)
+        val attributes = context.obtainStyledAttributes(attrs, R.styleable.IslandNavigationBar, 0, 0)
 
         if (attributes.hasValue(R.styleable.IslandNavigationBar_barMenu)) {
             val menuRes = attributes.getResourceId(R.styleable.IslandNavigationBar_barMenu, 0)
