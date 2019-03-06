@@ -87,7 +87,7 @@ class IslandNavigationBarTab(
     private lateinit var tabTitleTextView: TextView
     private lateinit var tabIconView: ImageView
 
-    fun setInitialSelectedStatus(initialSelected: Boolean) {
+    internal fun setInitialSelectedStatus(initialSelected: Boolean) {
         if (initialSelected) {
             isTabSelected = true
 
@@ -105,7 +105,7 @@ class IslandNavigationBarTab(
         }
     }
 
-    fun selectTab() {
+    internal fun selectTab() {
         tabIconView.isSelected = true
         if (background is TransitionDrawable) {
             val transitionDrawable = background as TransitionDrawable
@@ -117,7 +117,7 @@ class IslandNavigationBarTab(
         tabTitleTextView.visibility = View.VISIBLE
     }
 
-    fun deselectTab() {
+    internal fun deselectTab() {
         tabIconView.isSelected = false
 
         if (background is TransitionDrawable) {

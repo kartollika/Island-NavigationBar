@@ -14,18 +14,9 @@
     <declare-styleable name="IslandNavigationBarTab">
         <attr name="tabTitle" format="reference|string" />
         <attr name="tabIcon" format="reference" />
-        <!--<attr name="tabIconHeight" format="reference|dimension" />-->
-        <!--<attr name="tabIconWidth" format="reference|dimension" />-->
         <attr name="tabBackground" format="reference" />
         <attr name="tabToggleDuration" format="integer" />
-
-        <!--<attr name="tabActionsActiveColor" format="reference|color" />-->
-        <!--<attr name="tabActionsInactiveColor" format="reference|color" />-->
-
         <attr name="tabTitleActiveColor" format="reference|color" />
         <attr name="tabTitleInactiveColor" format="reference|color" />
-
-        <attr name="tabIconTintActiveColor" format="reference|color" />
-        <attr name="tabIconTintInactiveColor" format="reference|color" />
     </declare-styleable>
 </resources>
