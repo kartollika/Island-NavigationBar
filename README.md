@@ -9,7 +9,7 @@
 
 ## Usage
 
-Unfortunately, you can not create `IslandNavigationBar` by your own using only code, so you firstly should add `IslandNavigationBar` to your ***layout.xml***
+Unfortunately, you can not create `IslandNavigationBar` by your own using code only, so you should firstly add `IslandNavigationBar` to your ***layout.xml***
 
 ## Initialize bar
 ```xml
@@ -24,10 +24,10 @@ Unfortunately, you can not create `IslandNavigationBar` by your own using only c
 
 | **Attribute**  | **Description** |
 |---|---|
-| `barDistribution` | Distribution of navigation bar items. Available values: `spread`, `packed`, `spread_inside`, so they are equals to the same mode in *Constraint layout chains* |
-| `barMenu` | Optional, if you want to inflate your bar using ***menu.xml*** |
-| `barSelectedTab` | Initial selected tab |
-| `barToggleInterpolator` | If you want to see other animation of changing items, you should override this attribute. `AccelerateDecelerateInterpolator` is using by default |
+| barDistribution | Distribution of navigation bar items. Available values: `spread`, `packed`, `spread_inside`, so they are equals to the same mode in *Constraint layout chains* |
+| barMenu | Optional, if you want to inflate your bar using ***menu.xml*** |
+| barSelectedTab | Initial selected tab |
+| barToggleInterpolator | If you want to see other animation of changing items, you should override this attribute. `AccelerateDecelerateInterpolator` is using by default |
 
 
 #### And now you are ready to add items to your bar!
@@ -69,18 +69,18 @@ Unfortunately, you can not create `IslandNavigationBar` by your own using only c
         android:title="Alarm" />
         
     <!-- Add more child items here - max upto 5 -->
-~~~
+```
 
 ### Now you can customize tabs by your own!
 
 | **Attribute**  | **Description** |
 |---|---|
-| `tabTitle` | Title of tab |
-| `tabIcon` | Icon of tab. If you want to change tint dynamically - use selector for icon, where active state has `state_selected="true"` |
-| `tabBackground` | Background of tab. Use `<transition>` to make smooth animation of changing state. Otherwise, use usual drawable and so on |
-| `tabToggleDuration` | Duration of applying animations, such as text appearing and dissapearing, change background color, etc |
-| `tabTitleActiveColor` | Change color of title when active state |
-| `tabTitleInactiveColor` |  Change color of title when inactive state  |
+| tabTitle | Title of tab |
+| tabIcon | Icon of tab. If you want to change tint dynamically - use selector for icon, where active state has `state_selected="true"` |
+| tabBackground | Background of tab. Use `<transition>` to make smooth animation of changing state. Otherwise, use usual drawable and so on |
+| tabToggleDuration | Duration of applying animations, such as text appearing and dissapearing, change background color, etc |
+| tabTitleActiveColor | Change color of title when active state |
+| tabTitleInactiveColor |  Change color of title when inactive state  |
 
 #### Sample of customization
 
