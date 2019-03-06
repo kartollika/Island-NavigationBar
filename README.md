@@ -23,7 +23,7 @@ Unfortunately, you can not create `IslandNavigationBar` by your own using code o
 ### Customizing 
 
 | **Attribute**  | **Description** |
-|---|---|
+|:---:|---|
 | barDistribution | Distribution of navigation bar items. Available values: `spread`, `packed`, `spread_inside`, so they are equals to the same mode in *Constraint layout chains* |
 | barMenu | Optional, if you want to inflate your bar using ***menu.xml*** |
 | barSelectedTab | Initial selected tab |
@@ -74,7 +74,7 @@ Unfortunately, you can not create `IslandNavigationBar` by your own using code o
 ### Now you can customize tabs by your own!
 
 | **Attribute**  | **Description** |
-|---|---|
+|:---:|---|
 | tabTitle | Title of tab |
 | tabIcon | Icon of tab. If you want to change tint dynamically - use selector for icon, where active state has `state_selected="true"` |
 | tabBackground | Background of tab. Use `<transition>` to make smooth animation of changing state. Otherwise, use usual drawable and so on |
