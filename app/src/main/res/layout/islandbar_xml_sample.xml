@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.kartollika.views.islandnavigationbar.IslandNavigationBar
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/navigation_bar_background"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        app:barSelectedTab="2">
+
+        <com.kartollika.views.islandnavigationbar.IslandNavigationBarTab
+            android:id="@+id/tabProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tabBackground="@drawable/tab_person_background"
+            app:tabIcon="@drawable/person_selector"
+            app:tabTitle="Profile" />
+
+        <com.kartollika.views.islandnavigationbar.IslandNavigationBarTab
+            android:id="@+id/tabFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tabBackground="@drawable/tab_favorite_background"
+            app:tabIcon="@drawable/favorite_selector"
+            app:tabTitle="Favorite" />
+
+        <com.kartollika.views.islandnavigationbar.IslandNavigationBarTab
+            android:id="@+id/tabAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tabBackground="@drawable/tab_alarm_background"
+            app:tabIcon="@drawable/alarm_selector"
+            app:tabTitle="Alarm" />
+
+        <com.kartollika.views.islandnavigationbar.IslandNavigationBarTab
+            android:id="@+id/tabHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tabBackground="@drawable/tab_home_background"
+            app:tabIcon="@drawable/home_selector"
+            app:tabTitle="Home" />
+
+    </com.kartollika.views.islandnavigationbar.IslandNavigationBar>
+
+</FrameLayout>

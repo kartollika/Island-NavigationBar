@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IslandNavigationBar">
+        <attr name="barMenu" format="reference" />
+        <attr name="barSelectedTab" format="integer" />
+        <attr name="barToggleInterpolator" format="reference" />
+        <attr name="barDistribution" format="enum">
+            <enum name="spread" value="0" />
+            <enum name="packed" value="1" />
+            <enum name="spread_inside" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="IslandNavigationBarTab">
+        <attr name="tabTitle" format="reference|string" />
+        <attr name="tabIcon" format="reference" />
+        <!--<attr name="tabIconHeight" format="reference|dimension" />-->
+        <!--<attr name="tabIconWidth" format="reference|dimension" />-->
+        <attr name="tabBackground" format="reference" />
+        <attr name="tabToggleDuration" format="integer" />
+
+        <!--<attr name="tabActionsActiveColor" format="reference|color" />-->
+        <!--<attr name="tabActionsInactiveColor" format="reference|color" />-->
+
+        <attr name="tabTitleActiveColor" format="reference|color" />
+        <attr name="tabTitleInactiveColor" format="reference|color" />
+
+        <attr name="tabIconTintActiveColor" format="reference|color" />
+        <attr name="tabIconTintInactiveColor" format="reference|color" />
+    </declare-styleable>
+</resources>
