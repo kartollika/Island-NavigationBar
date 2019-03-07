@@ -3,4 +3,24 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="color_home_fragment">#FFCC80</color>
+    <color name="color_alarm_fragment">#EF9A9A</color>
+    <color name="color_favorite_fragment">#B39DDB</color>
+    <color name="color_person_fragment">#90CAF9</color>
+
+    <color name="color_tab_home_background_menu_1">#40FFCC80</color>
+    <color name="color_tab_alarm_background_menu_1">#40EF9A9A</color>
+    <color name="color_tab_favorite_background_menu_1">#40B39DDB</color>
+    <color name="color_tab_person_background_menu_1">#4090CAF9</color>
+
+    <color name="color_tab_home_background_xml_1">#80FFCA28</color>
+    <color name="color_tab_alarm_background_xml_1">#80EF5350</color>
+    <color name="color_tab_favorite_background_xml_1">#807E57C2</color>
+    <color name="color_tab_person_background_xml_1">#8042A5F5</color>
+
+    <color name="color_tab_home_actions_menu_1">#FFCA28</color>
+    <color name="color_tab_alarm_actions_menu_1">#EF5350</color>
+    <color name="color_tab_favorite_actions_menu_1">#7E57C2</color>
+    <color name="color_tab_person_actions_menu_1">#42A5F5</color>
 </resources>

@@ -2,5 +2,5 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
     <corners android:radius="32dp" />
-    <solid android:color="#4D0071D5" />
+    <solid android:color="@color/color_tab_home_background_xml_1" />
 </shape>

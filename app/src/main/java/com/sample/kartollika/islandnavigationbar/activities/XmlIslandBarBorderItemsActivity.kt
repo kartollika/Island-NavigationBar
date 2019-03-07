@@ -7,14 +7,14 @@ import com.kartollika.views.islandnavigationbar.IslandNavigationBarView
 import com.sample.kartollika.islandnavigationbar.R
 import com.sample.kartollika.islandnavigationbar.fragments.ContentFragment
 
-class XmlIslandBarActivity : AppCompatActivity() {
+class XmlIslandBarBorderItemsActivity : AppCompatActivity() {
 
     private lateinit var islandBar: IslandNavigationBarView
     private lateinit var colorsArray: List<Int>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.islandbar_xml_sample)
+        setContentView(R.layout.islandbar_xml_borders_items_sample)
 
         colorsArray = listOf(
             ContextCompat.getColor(this, R.color.color_home_fragment),

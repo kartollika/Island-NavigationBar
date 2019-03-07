@@ -21,6 +21,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/navigation_bar_background"
+        android:elevation="16dp"
         android:paddingTop="16dp"
         android:paddingBottom="16dp"
         app:barDistribution="packed"

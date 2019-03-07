@@ -8,15 +8,21 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/bottom_bar_using_menu"
+        android:id="@+id/islandbar_using_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Create Bottom Bar with Menu" />
+        android:text="Create IslandNavigationBar with Menu" />
 
     <Button
-        android:id="@+id/bottom_bar_using_xml"
+        android:id="@+id/islandbar_using_xml"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Create Bottom Bar with XML, which supports custom positioning of tabs" />
+        android:text="Create IslandNavigationBar with XML" />
+
+    <Button
+        android:id="@+id/islandbar_stroke_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IslandNavigationBar (items with stroke background)" />
 
 </LinearLayout>
