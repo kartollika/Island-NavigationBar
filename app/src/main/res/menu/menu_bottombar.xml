@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_home"
+        android:icon="@drawable/home_selector"
+        android:title="Home" />
+    <item
+        android:id="@+id/tab_alarm"
+        android:icon="@drawable/alarm_selector"
+        android:title="Alarm" />
+    <item
+        android:id="@+id/tab_favorite"
+        android:icon="@drawable/favorite_selector"
+        android:title="Favorite" />
+    <item
+        android:id="@+id/tab_person"
+        android:icon="@drawable/person_selector"
+        android:title="Person" />
+</menu>
