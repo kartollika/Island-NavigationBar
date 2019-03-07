@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.kartollika.views.islandnavigationbar.IslandNavigationBarView
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/navigation_bar_background"
+        android:elevation="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        app:barSelectedTab="2">
+
+        <com.kartollika.views.islandnavigationbar.IslandNavigationTabView
+            android:id="@+id/tabHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tabBackground="@drawable/tab_home_background_xml_2"
+            app:tabIcon="@drawable/home_selector"
+            app:tabTitle="Home"
+            app:tabTitleActiveColor="@android:color/black" />
+
+        <com.kartollika.views.islandnavigationbar.IslandNavigationTabView
+            android:id="@+id/tabAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tabBackground="@drawable/tab_alarm_background_xml_2"
+            app:tabIcon="@drawable/alarm_selector"
+            app:tabTitle="Alarm"
+            app:tabTitleActiveColor="@android:color/black" />
+
+        <com.kartollika.views.islandnavigationbar.IslandNavigationTabView
+            android:id="@+id/tabFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tabBackground="@drawable/tab_favorite_background_xml_2"
+            app:tabIcon="@drawable/favorite_selector"
+            app:tabTitle="Favorite"
+            app:tabTitleActiveColor="@android:color/black" />
+
+        <com.kartollika.views.islandnavigationbar.IslandNavigationTabView
+            android:id="@+id/tabProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tabBackground="@drawable/tab_person_background_xml_2"
+            app:tabIcon="@drawable/person_selector"
+            app:tabTitle="Profile"
+            app:tabTitleActiveColor="@android:color/black" />
+
+    </com.kartollika.views.islandnavigationbar.IslandNavigationBarView>
+
+</FrameLayout>
