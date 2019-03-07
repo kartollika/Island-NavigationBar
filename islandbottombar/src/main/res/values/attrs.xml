@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="IslandNavigationBar">
+    <declare-styleable name="IslandNavigationBarView">
         <attr name="barMenu" format="reference" />
         <attr name="barSelectedTab" format="integer" />
+        <attr name="barTabToggleDuration" format="integer" />
         <attr name="barToggleInterpolator" format="reference" />
         <attr name="barDistribution" format="enum">
             <enum name="spread" value="0" />
@@ -11,12 +12,13 @@
         </attr>
     </declare-styleable>
 
-    <declare-styleable name="IslandNavigationBarTab">
+    <declare-styleable name="IslandNavigationTabView">
         <attr name="tabTitle" format="reference|string" />
         <attr name="tabIcon" format="reference" />
         <attr name="tabBackground" format="reference" />
         <attr name="tabToggleDuration" format="integer" />
         <attr name="tabTitleActiveColor" format="reference|color" />
         <attr name="tabTitleInactiveColor" format="reference|color" />
+        <attr name="tabCustomPadding" format="dimension|reference" />
     </declare-styleable>
 </resources>

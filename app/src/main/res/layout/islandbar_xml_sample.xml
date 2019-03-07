@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <com.kartollika.views.islandnavigationbar.IslandNavigationBar
+    <com.kartollika.views.islandnavigationbar.IslandNavigationBarView
         android:id="@+id/navigation_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,15 +22,16 @@
         android:paddingBottom="16dp"
         app:barSelectedTab="2">
 
-        <com.kartollika.views.islandnavigationbar.IslandNavigationBarTab
+        <com.kartollika.views.islandnavigationbar.IslandNavigationTabView
             android:id="@+id/tabProfile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:tabBackground="@drawable/tab_person_background"
             app:tabIcon="@drawable/person_selector"
-            app:tabTitle="Profile" />
+            app:tabTitle="Profile"
+            app:tabTitleActiveColor="@android:color/holo_red_dark" />
 
-        <com.kartollika.views.islandnavigationbar.IslandNavigationBarTab
+        <com.kartollika.views.islandnavigationbar.IslandNavigationTabView
             android:id="@+id/tabFavorite"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -38,7 +39,7 @@
             app:tabIcon="@drawable/favorite_selector"
             app:tabTitle="Favorite" />
 
-        <com.kartollika.views.islandnavigationbar.IslandNavigationBarTab
+        <com.kartollika.views.islandnavigationbar.IslandNavigationTabView
             android:id="@+id/tabAlarm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -46,7 +47,7 @@
             app:tabIcon="@drawable/alarm_selector"
             app:tabTitle="Alarm" />
 
-        <com.kartollika.views.islandnavigationbar.IslandNavigationBarTab
+        <com.kartollika.views.islandnavigationbar.IslandNavigationTabView
             android:id="@+id/tabHome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -54,6 +55,6 @@
             app:tabIcon="@drawable/home_selector"
             app:tabTitle="Home" />
 
-    </com.kartollika.views.islandnavigationbar.IslandNavigationBar>
+    </com.kartollika.views.islandnavigationbar.IslandNavigationBarView>
 
 </FrameLayout>
