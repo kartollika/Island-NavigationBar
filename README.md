@@ -2,13 +2,18 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Minimal requirements and features
-- Supports API >= 19
+- Supports API >= 17
 - Highly customizable
 - Easy to integrate
 - Supports initializing via both the **XML** and inflating from **menu.xml**
 
 ## Usage
 
+| IslandBar from menu | IslandBar from XML | IslandBar with stroke tabs |
+| --- | --- | --- |
+| ![Inflated from menu](https://github.com/kartollika/Island-NavigationBar/raw/master/samples/from_menu.gif) | ![Inflated from XML](https://github.com/kartollika/Island-NavigationBar/raw/master/samples/xml.gif) | ![Inflated from XML with stroke tabs](https://github.com/kartollika/Island-NavigationBar/raw/master/samples/xml_stroked.gif) |
+
+**Attention!** 
 Unfortunately, you can not create `IslandNavigationBar` by your own using code only, so you should firstly add `IslandNavigationBar` to your ***layout.xml***
 
 ## Initialize bar
@@ -42,7 +47,7 @@ All methods are listed in ***IslandNavigationBar*** interface:
 | fun setBarTabsDistribution(chainMode: IslandNavigationBarView.ChainMode)|
 | fun setOnTabActionListener(listener: IslandNavigationBarView.OnTabActionListener) |
 
-Example: 
+**Example:** 
 
 ```kotlin
 islandBar.apply { 
