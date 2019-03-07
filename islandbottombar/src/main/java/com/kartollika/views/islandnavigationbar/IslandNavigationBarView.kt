@@ -68,11 +68,6 @@ class IslandNavigationBarView(
 
     fun getTabById(id: Int): IslandNavigationTabView = findViewById(id)
 
-    fun setChainStyleMode(chainMode: ChainMode) {
-        this.chainMode = chainMode
-        updateTabItems()
-    }
-
     /* ======================================
      * IslandNavigationBar interface
      * ====================================== */
@@ -99,7 +94,7 @@ class IslandNavigationBarView(
 
     override fun setBarTabsDistribution(chainMode: ChainMode) {
         this.chainMode = chainMode
-        requestLayout()
+        updateTabItems()
     }
 
     override fun setOnTabActionListener(listener: OnTabActionListener) {
@@ -187,12 +182,8 @@ class IslandNavigationBarView(
         if (menuRes == 0) {
             return
         }
-
         val menu = MenuBuilder(context)
         MenuInflater(context).inflate(menuRes, menu)
-        if (navigationTabs.size + menu.size() > 5) {
-            throw java.lang.IllegalArgumentException("Count of tabs of BottomBar must be less or equal to 5")
-        }
         for (menuItem in menu.nonActionItems.also { it.addAll(menu.actionItems) }) {
             addTab(IslandNavigationTabView(context).apply {
                 id = menuItem.itemId
@@ -206,8 +197,18 @@ class IslandNavigationBarView(
     private fun reloadTabs() {
         navigationTabs.clear()
         var index = 0
+
+        if (childCount > 5) {
+            throw IllegalArgumentException("Count of tabs of BottomBar must be at most 5")
+        }
+
         for (i in 0 until childCount) {
-            navigationTabs.add(getChildAt(i) as IslandNavigationTabView)
+            try {
+                navigationTabs.add(getChildAt(i) as IslandNavigationTabView)
+            } catch (e: ClassCastException) {
+                throw java.lang.ClassCastException("All children of IslandNavigationBar must be type of IslandNavigationTab")
+            }
+
             val tab = navigationTabs[i]
             tab.also {
                 it.setOnClickListener { view ->

@@ -22,7 +22,7 @@ class MenuIslandBarActivity : AppCompatActivity() {
         val islandBar = findViewById<IslandNavigationBarView>(R.id.navigation_bar)
 
         with(islandBar) {
-            getTabById(R.id.tab_home)?.let {
+            getTabById(R.id.tab_home).let {
                 it.setTabTitleActiveColor(Color.parseColor("#8122B4"))
                 it.setTabBackground(
                     ContextCompat.getDrawable(
@@ -32,7 +32,7 @@ class MenuIslandBarActivity : AppCompatActivity() {
                 )
                 it.setTabToggleDuration(300)
             }
-            getTabById(R.id.tab_person)?.let {
+            getTabById(R.id.tab_person).let {
                 it.setTabTitleActiveColor(Color.parseColor("#C90000"))
                 it.setTabBackground(
                     ContextCompat.getDrawable(
@@ -42,7 +42,7 @@ class MenuIslandBarActivity : AppCompatActivity() {
                 )
                 it.setTabToggleDuration(300)
             }
-            getTabById(R.id.tab_alarm)?.let {
+            getTabById(R.id.tab_alarm).let {
                 it.setTabTitleActiveColor(Color.parseColor("#308B00"))
                 it.setTabBackground(
                     ContextCompat.getDrawable(
@@ -52,7 +52,7 @@ class MenuIslandBarActivity : AppCompatActivity() {
                 )
                 it.setTabToggleDuration(300)
             }
-            getTabById(R.id.tab_favorite)?.let {
+            getTabById(R.id.tab_favorite).let {
                 it.setTabTitleActiveColor(Color.parseColor("#0071D5"))
                 it.setTabBackground(
                     ContextCompat.getDrawable(
