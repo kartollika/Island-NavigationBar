@@ -7,6 +7,26 @@
 - Easy to integrate
 - Supports initializing via both the **XML** and inflating from **menu.xml**
 
+## Instalation
+
+- Add this line into your project's build.gradle file 
+```gradle
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+- After that, add the dependency in app/build.gradle file
+
+```gradle
+dependencies {
+    implementation 'com.github.kartollika:Island-NavigationBar:v1.0.0'
+}
+```
+
 ## Usage
 
 | IslandBar from menu | IslandBar from XML | IslandBar with stroke tabs |
