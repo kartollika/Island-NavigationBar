@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_tab_internal_padding">12dp</dimen>
+    <integer name="default_tab_toggle_animation_duration">250</integer>
+    <integer name="default_bar_toggle_animation_duration">250</integer>
+</resources>
