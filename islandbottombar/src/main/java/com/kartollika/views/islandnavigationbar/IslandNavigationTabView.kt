@@ -117,6 +117,8 @@ class IslandNavigationTabView(
         tabTitleTextView.text = title
     }
 
+    override fun getTabTitle(): String = tabTitle
+
     override fun setTabIcon(drawable: Drawable?) {
         tabIcon = drawable
         tabIconView.setImageDrawable(drawable)

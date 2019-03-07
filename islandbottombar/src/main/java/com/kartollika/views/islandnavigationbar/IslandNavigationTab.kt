@@ -5,6 +5,7 @@ import android.graphics.drawable.Drawable
 
 interface IslandNavigationTab {
     fun setTabTitle(title: String)
+    fun getTabTitle(): String
     fun setTabIcon(drawable: Drawable?)
     fun setTabToggleDuration(duration: Int)
     fun setTabBackground(background: Drawable?)

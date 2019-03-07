@@ -99,6 +99,9 @@ class IslandNavigationBarView(
 
     override fun setOnTabActionListener(listener: OnTabActionListener) {
         onTabSelectedListener = listener
+        if (navigationTabs.size > currentTab) {
+            navigationTabs[currentTab].performClick()
+        }
     }
 
     /* ======================================
@@ -236,6 +239,9 @@ class IslandNavigationBarView(
                 }
                 it.tabPosition = index++
                 tab.setInitialSelectedStatus(currentTab == it.tabPosition)
+                if (currentTab == it.tabPosition) {
+                    onTabSelectedListener?.onTabSelected(tab.tabId)
+                }
             }
         }
         tabsCount = navigationTabs.size
