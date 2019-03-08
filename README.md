@@ -1,6 +1,13 @@
 # Island-NavigationBar
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Samples
+
+| IslandBar from menu | IslandBar from XML | IslandBar with stroke tabs |
+| --- | --- | --- |
+| ![Inflated from menu](https://github.com/kartollika/Island-NavigationBar/raw/master/samples/from_menu.gif) | ![Inflated from XML](https://github.com/kartollika/Island-NavigationBar/raw/master/samples/xml.gif) | ![Inflated from XML with stroke tabs](https://github.com/kartollika/Island-NavigationBar/raw/master/samples/xml_stroked.gif) |
+
+
 ## Minimal requirements and features
 - Supports API >= 17
 - Highly customizable
@@ -28,10 +35,6 @@ dependencies {
 ```
 
 ## Usage
-
-| IslandBar from menu | IslandBar from XML | IslandBar with stroke tabs |
-| --- | --- | --- |
-| ![Inflated from menu](https://github.com/kartollika/Island-NavigationBar/raw/master/samples/from_menu.gif) | ![Inflated from XML](https://github.com/kartollika/Island-NavigationBar/raw/master/samples/xml.gif) | ![Inflated from XML with stroke tabs](https://github.com/kartollika/Island-NavigationBar/raw/master/samples/xml_stroked.gif) |
 
 **Attention!** 
 Unfortunately, you can not create `IslandNavigationBar` by your own using code only, so you should firstly add `IslandNavigationBar` to your ***layout.xml***
