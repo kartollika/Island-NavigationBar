@@ -5,7 +5,7 @@
 
 | IslandBar from menu | IslandBar from XML | IslandBar with stroke tabs |
 | --- | --- | --- |
-| ![Inflated from menu](https://github.com/kartollika/Island-NavigationBar/raw/master/samples/from_menu.gif) | ![Inflated from XML with stroke tabs](https://github.com/kartollika/Island-NavigationBar/raw/master/samples/xml_stroked.gif) | ![Inflated from XML](https://github.com/kartollika/Island-NavigationBar/raw/master/samples/xml.gif) |
+| ![Inflated from menu](https://github.com/kartollika/Island-NavigationBar/raw/master/samples/from_menu.gif) | ![Inflated from XML](https://github.com/kartollika/Island-NavigationBar/raw/master/samples/xml.gif) | ![Inflated from XML with stroke tabs](https://github.com/kartollika/Island-NavigationBar/raw/master/samples/xml_stroked.gif) |
 
 ## Minimal requirements and features
 - Supports API >= 17
