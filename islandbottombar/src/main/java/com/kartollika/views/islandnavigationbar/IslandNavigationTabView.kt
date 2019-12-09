@@ -68,7 +68,7 @@ class IslandNavigationTabView(
             }
         } else {
             if (background !is TransitionDrawable) {
-                tabBackground = null
+                background = null
             }
             isTabSelected = false
             tabIconView.isSelected = false
@@ -101,7 +101,7 @@ class IslandNavigationTabView(
             val transitionDrawable = background as TransitionDrawable
             transitionDrawable.reverseTransition(tabToggleDuration)
         } else {
-            tabBackground = null
+            background = null
         }
         tabTitleTextView.setTextColor(tabTitleInactiveColor)
         tabTitleTextView.visibility = View.GONE
